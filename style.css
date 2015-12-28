@@ -1,0 +1,281 @@
+/*beginning of CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+
+}
+p {
+  padding: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+/*end of borrowed CSS clear from http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/*/
+
+
+
+
+body, footer {
+  min-width: 860px;
+}
+body{
+  min-height: 840px;
+}
+
+
+/*header content*/
+
+header {
+  background-color: #35BEC0;
+  height: 15em;
+}
+
+.allheader{
+  padding-top: 2em;
+  text-align: center;
+}
+
+.headercontent {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#name {
+  text-align: center;
+  font-family: 'Raleway Dots', cursive;
+  font-size: 8em;
+  color: white;
+}
+
+
+
+#portrait {
+  height: 7em;
+  margin-left: 1em;
+  border-radius: 10%; 
+}
+
+/*under construction message*/
+
+.main{
+  margin-top: 3em;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  color: #FF8000;
+
+}
+
+#border {
+  background-image: url('images/big_border_bar.png');
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-size: contain;
+
+  margin-top: 4em;
+
+  height: 2em;
+}
+
+/*section content*/
+
+.content {
+
+  min-height: 50px;
+
+  margin-top: .5em;
+}
+.allsectioncontent {
+  padding-top: 8em;
+  text-align: center;
+}
+
+.sectioncontentitem {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#computer {
+  height: 11em;
+}
+
+#orangebar {
+  height: 10em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.menuitem {
+  margin-bottom: .25em;
+}
+.sublistitem {
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+}
+
+.sublistitem > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: #35BEC0;
+}
+
+.sublistitem > h2:hover {
+  color: #FF8000;
+}
+
+#bargraphlist {
+  text-align: left;
+}
+
+.graphbar {
+  height: 2em;
+}
+
+/*footer*/
+
+footer {
+  background-color: #35BEC0;
+}
+
+#findme {
+  padding-top: 2em;
+}
+
+#findme > h2 {
+  font-family: 'Fira Mono', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#contactmenu {
+  padding-top: 1.5em;
+  text-align: center;
+}
+
+.footerlistitem {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.icon {
+  text-align: center;
+  height: 2em;
+}
+
+.icontext {
+  text-align: center;
+  font-family: 'Fira Mono', sans-serif;
+  font-size: .75em;
+  color: white;
+  padding: .5em .25em .25em .25em;
+}
+
+/* hovering on links*/
+
+#in_text, #git_text, #email_text {
+  visibility: hidden;
+}
+
+#linkedin:hover #in_text {
+  visibility:visible;
+}
+
+#github:hover #git_text {
+  visibility:visible;
+}
+
+#email:hover #email_text {
+  visibility:visible;
+}
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 180px;}  /* must be same height as the footer */
+
+footer {position: relative;
+  margin-top: -12em; /* negative value of footer height */
+  height: 12em;
+  clear:both;} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+  <style type="text/css">
+    #wrap {display:table;height:100%}
+  </style>
+<![endif]-->
+
+*/
