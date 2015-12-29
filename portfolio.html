@@ -3,12 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Anna Hazard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway+Dots|Raleway:400,200,600|Fira+Mono:400,700' rel='stylesheet' type='text/css'>
 	<!--This part is only in portfolio head for photo gallery-->
-	<link rel='stylesheet' href='css/photoswipe.css'>
-	<link rel='stylesheet' href='css/default-skin.css'>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='stylesheet' href='photoswipe/photoswipe.css'>
+	<link rel='stylesheet' href='photoswipe/default-skin/default-skin.css'>
 </head>
 <body>
 	<div id="wrap">
@@ -31,7 +30,9 @@
 
 				<div class="allsectioncontent">
 					<div class="sectioncontentitem" id="computerpicturecontainer">
+						<a href="index.html">
 						<img id="computer" src="images/computermonitor.png">
+						</a>
 					</div>
 
 					<div class="sectioncontentitem" id="dividerbarcontainer">
@@ -96,7 +97,31 @@
 						
 					</div>
 
-					<div class="sectioncontentitem" id="main_text">
+					<div class="sectioncontentitem" id="gallery_section">
+
+					<h2>infographics and charts</h2>
+
+					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					      	<a href="portfolio/images/BAM-Outcomes-Data-Viz-with-source.png" itemprop="contentUrl" data-size="960x1448">
+					          	<img src="portfolio/images/BAM_thumbnail.png" itemprop="thumbnail" alt="Image description" />
+					      	</a>
+					                                          <figcaption itemprop="caption description">Chart for Chicago Policy Review article, <a href="http://chicagopolicyreview.org/2015/11/18/stop-look-and-listen-a-behavioral-approach-to-reducing-teen-violence/">"Stop, Look, and Listen: A Behavioral Approach to Reducing Teen Violence"</a> November 18, 2015</figcaption>
+					                                          
+					    </figure>
+
+					    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					      	<a href="portfolio/images/Moving-to-Opportunity-Data-Viz-with-source.png" itemprop="contentUrl" data-size="960x1824">
+					          <img src="portfolio/images/Moving_thumbnail.png" itemprop="thumbnail" alt="Image description" />
+					      	</a>
+					      	<figcaption itemprop="caption description">Chart for Chicago Policy Review article, <a href="http://chicagopolicyreview.org/2015/11/25/moving-to-opportunity-how-housing-policy-can-disrupt-the-persistence-of-poverty/">"Moving to Opportunity: How Housing Policy Can Disrupt the Persistence of Poverty,"</a> November 25, 2015</figcaption>
+					    </figure>
+
+					  
+
+
+					</div>
 
 					<!-- Root element of PhotoSwipe. Must have class pswp. -->
 					<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -210,7 +235,7 @@
 						</a>
 					</li>
 					<li class="footerlistitem" id="email">
-						<a href="mailto:anna.liz.hazard@gmail.com"
+						<a href="mailto:annabeth@uchicago.edu"
 						style="text-decoration: none !important;">
 							<div>
 								<img src="images/emailicon.png" id="email_icon" class="icon"
@@ -226,7 +251,9 @@
 			</ul>
 		</footer>
 
-		<script src='js/photoswipe.min.js'></script>
-		<script src='js/photoswipe-ui-default.min.js'></script>
+		<script src='photoswipe/photoswipe.min.js'></script>
+		<script src='photoswipe/photoswipe-ui-default.js'></script>
+
+		<script type="text/javascript" src='photoswipe/index.js'></script>
 </body>
 </html>
