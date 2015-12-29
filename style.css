@@ -118,23 +118,7 @@ header {
   height: 2em;
 }
 
-/*section content*/
-
-.content {
-
-  min-height: 50px;
-
-  margin-top: .5em;
-}
-.allsectioncontent {
-  padding-top: 8em;
-  text-align: center;
-}
-
-.sectioncontentitem {
-  display: inline-block;
-  vertical-align: middle;
-}
+/* Navigation graphic formatting*/
 
 #computer {
   height: 11em;
@@ -173,9 +157,34 @@ header {
   height: 2em;
 }
 
-/*Main text formatting*/
+#nav_graphic_container {
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  text-align: center;
+}
 
-#main_text {
+.nav_graphic {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*section content*/
+
+.content {
+
+  min-height: 50px;
+  margin-top: .5em;
+}
+.allsectioncontent {
+  padding-top: 8em;
+  vertical-align: middle;
+}
+
+/*Main section general features, specifics change with page*/
+
+.sectioncontentitem {
+  display: inline-block;
   margin-left: 6em;
   margin-right: 6em;
   margin-top: 2em;
@@ -183,31 +192,34 @@ header {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   color: #FF8000;
-  text-align: left;
-  display: inline-block;
+  min-width: 875px;
 }
 
-#main_text > h2 {
+.sectioncontentitem > h2 {
   font-family: 'Fira Mono', sans-serif;
   font-size: 1.5em;
   color: #FF8000;
 }
 
-#main_text > p {
+.sectioncontentitem > p {
   font-size: .9em;
   color: #125C69;
   line-height: 150%;
 }
 
-#main_text a {
+.sectioncontentitem a {
   text-decoration: none;
   color: #125C69;
 }
 
-#main_text a:hover {
+a:hover {
   text-decoration: none;
   color: #35BEC0;
 }
+
+
+/*Page-specific formatting*/
+
 
 /*Photoswipe formatting*/
 
@@ -230,38 +242,20 @@ header {
 }
 
 #gallery_section {
-  margin-left: 6em;
-  margin-right: 6em;
-  margin-top: 2em;
-  margin-bottom: 4em;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
-  color: #FF8000;
-  text-align: left;
   float: left; /*This is keeping non-text main area aligned left*/
 }
 
-#gallery_section > h2 {
-  font-family: 'Fira Mono', sans-serif;
-  font-size: 1.5em;
-  color: #FF8000;
+/*Contact section-specific*/
+
+#content {
+  display: block;
+  text-align: center;
 }
 
-#gallery_section > p {
-  font-size: .9em;
-  color: #125C69;
-  line-height: 150%;
+.content_item {
+  text-align: center;
 }
 
-#gallery_section a {
-  text-decoration: none;
-  color: #125C69;
-}
-
-#gallery_section a:hover {
-  text-decoration: none;
-  color: #35BEC0;
-}
 /*footer*/
 
 footer {
