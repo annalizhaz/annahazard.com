@@ -242,6 +242,7 @@ a:hover {
 
 #gallery_section {
   float: left; /*This is keeping non-text main area aligned left*/
+  margin-right: 0;
 }
 
 /*Contact section-specific*/
